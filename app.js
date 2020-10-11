@@ -184,7 +184,7 @@ app.get("/main",function(req,res){
 app.get("/catagories",function(req,res){
 
 });
-app.get("/newr-equest",function(req,res){
+app.get("/new-request",function(req,res){
   if(req.isAuthenticated()){
     res.render("new-request.ejs");
   }else {
