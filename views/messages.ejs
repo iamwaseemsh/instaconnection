@@ -1,0 +1,33 @@
+<%- include('partials/header1.ejs') -%>
+<div class="wrapper">
+    <div class="header">
+      <h2><i class="fas fa-comment-alt"></i> Messages</h2>
+    </div>
+    <div class="middleDiv">
+    <div class="userList">
+      <dl id="usersListEvent" class="userDescList">
+        <dt><i class="fas fa-users"></i>Users</dt>
+        <%-include("partials/user.ejs") -%>
+      </dl>
+    </div>
+    <div class="messagesDiv" id="mainMessageArea" >
+
+
+
+      <!-- <div class="footer">
+        <form style="display:flex; width:90%; margin:0 auto;">
+          <input type="text" class="form-control" name="" placeholder="Enter message here!" value="">
+          <button type="" class="btn-info" name="button">Send</button>
+        </form>
+      </div> -->
+    </div>
+    </div>
+    <div class="footer">
+      <form style="display:flex; width:90%; margin:0 auto;">
+        <input type="text" id="createMessage" class="form-control" name="" placeholder="Enter message here!" value="">
+        <button id="createMessageBtn" class="btn-info" name="button">Send</button>
+      </form>
+    </div>
+</div>
+
+<%- include('partials/footer.ejs') -%>

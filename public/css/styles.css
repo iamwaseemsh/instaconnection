@@ -1,0 +1,330 @@
+/* nav bar css */
+ul li:hover{
+  background: #FFD700;
+  color: green;
+}
+.navbar-nav{
+  margin: 0 auto;
+}
+.navbar-brand{
+  margin-left: 20px;
+  font-size: 30px;
+  color: #FFD700;
+}
+
+
+/* NOTE: site background */
+.site-background{
+  background: url('../images/edited2.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 550px;
+
+  text-align: center;
+  padding-top: 10rem;
+}
+.site-background h3{
+  color: #FFD700;
+}
+.site-background h1{
+color: white;
+}
+.site-background hr{
+color: #FFD700;
+border: 1px solid #FFD700;
+width: 3rem;
+}
+
+
+/* NOTE: Login page */
+.login{
+
+  width: 100%;
+  padding: 30px;
+  height: auto;
+  background-color: #F0F0F0;
+}
+.login-form{
+    margin: 10px auto;
+width: 340px;
+  height: auto;
+  background-color: white;
+  padding: 30px;
+  border: 1px solid #F0F0F0;
+  border-radius: 30px;
+}
+.login-image{
+  margin: 10px auto;
+  width: 25%;
+  text-align: center;
+
+}
+.login-image img{
+  width: 25%;
+}
+.login-btn{
+
+text-align: center;
+padding-top: 20px;
+
+}
+.login-btn button{
+  width: 60%;
+}
+.login-bottom{
+  width: 340px;
+  text-align: center;
+  height: 40px;
+  padding: 10px;
+
+  background-color:white;
+  margin: 20px auto;
+  border: 1px solid #F0F0F0;
+  border-radius: 30px;
+}
+.login-bottom p{
+  float: left;
+}
+
+/* NOTE: Register page */
+.register-form{
+    margin: 10px auto;
+  width: 36%;
+  height: auto;
+  background-color: white;
+  padding: 30px;
+  border: 1px solid #F0F0F0;
+  border-radius: 30px;
+}
+
+
+
+/* NOTE: Main div*/
+.row{
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  background-color: #F0F0F0;
+}
+.profile-div{
+
+  height: auto;
+    background-color: white;
+  border: 1px solid black;
+  box-shadow: 1px solid white;
+}
+.profile-div img{
+  margin: 10px auto;
+}
+.detailDiv{
+
+  width: 100%;
+}
+.main-div{
+
+}
+.cat-div{
+border: 1px solid black;
+padding: 20px;
+height: 300px;
+  background-color: white;
+}
+.profileDiv{
+  width: 70%;
+  margin: 10px auto;
+  border-radius: 100px;
+}
+
+
+/* NOTE: Request */
+.request{
+  width: 80%;
+  padding: 1rem;
+  box-shadow: 0 1.4rem 8rem rgba(0,0,0,.2);
+  display: flex;
+  align-items: center;
+  border-radius: .8rem;
+margin: 10px auto;
+
+}
+.request-more{
+  width: 80px;
+}
+.request-more img{
+  width: 100%;
+}
+.request-more img:hover{
+  width: 110%;
+  color: red;
+}
+.request-img{
+  width: 50%;
+  border-radius: 100%;
+  position: relative;
+  z-index: 2;
+  right: 50px;
+}
+.request-img img{
+  width: 80%;
+  display: block;
+  border-radius: 100px;
+}
+.request-info{
+  position: relative;
+  right: 40px;
+  float: left;
+}
+.request-new{
+  width: 200px;
+position: absolute;
+
+right: 100px;
+
+}
+.hideElement{
+  visibility: hidden;
+}
+/* NOTE: New request create */
+.new-request-form{
+  width: 30%;
+  margin: 10px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 40px;
+  border: 1px solid #F0F0F0;
+}
+.new-request-div{
+  background-color: #F0F0F0;
+}
+/* NOTE: editprofile */
+.editprofileImage{
+  width: 60%;
+  margin: 0px auto;
+}
+.editprofileCore{
+  width: 30%;
+  padding: 20px;
+  margin: 10px auto;
+  background-color: white;
+  border: 1px solid #F0F0F0;
+  border-radius: 30px;
+}
+.editprofileMain{
+  background-color: #F0F0F0;
+}
+.roundClass{
+  border-radius: 100px;
+  width: 200px;
+  height: 200px;
+}
+//post
+.inputcomment{
+  margin: 10px auto;
+}
+.createComment{
+  max-width:800px;
+}
+.commentIcon img{
+  width: 90%;
+
+}
+.inputcomment{
+  float: left;
+  width: 80%;
+}
+/* NOTE:  Comment */
+.commentMain{
+  padding: 40px;
+  max-width: 80%;
+  margin: 10px auto;
+  border-radius: 50px;
+  max-height: 150px;
+}
+.commentImage{
+  width: 90%;
+}
+
+/* NOTE: profile */
+.profilecard{
+  width: 60%;
+  margin: 20px auto;
+  border-radius: 50px;
+}
+
+.profileFullName:hover{
+  color: green;
+  font-size: 1.4rem;
+}
+/* NOTE: Messages */
+
+.wrapper{
+  width: 96%;
+border-radius: 40px;
+  margin: 0 auto;
+
+
+}
+.header{
+  width: 100%;
+  height: 80px;
+border-top-left-radius: 50px;
+border-top-right-radius: 50px;
+  color: white;
+  padding: 20px;
+
+  background-color: #00FFFF;
+}
+.middleDiv{
+  width: 100%;
+
+  display: flex;
+
+}
+.userList{
+  padding: 20px;
+  color: white;
+  width: 20%;
+  height: 380px;
+  background-color: #00FFFF	;
+}
+.messagesDiv{
+  width: 80%;
+  height: 380px;
+  border-right: 1px solid #7FFFD4;
+}
+.footer{
+  width: 100%;
+  height: 80px;
+  background-color: #00FFFF;
+  padding-top: 20px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+
+}
+.roundImg{
+  border: 5px solid white;
+  border-radius: 100px;
+}
+li{
+            cursor: pointer;
+			margin: 15px 0;
+        }
+.items123{
+  width: 98%;
+  height: 30px;
+  font-size: 0.8em;
+  margin: 5px auto;
+  background-color: #40E0E0;
+  border: 2px solid white;
+  border-radius: 10px;
+  text-align: center;
+
+}
+.items123:hover{
+    background-color: #40E0D1;
+      border: 2px solid black;
+}
+.userDescList{
+ list-style-type: none;
+}

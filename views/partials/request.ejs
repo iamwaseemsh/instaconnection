@@ -1,0 +1,30 @@
+
+<% foundPosts.forEach(function(post){ %>
+  <div class="request">
+    <div class="request-img">
+    <%  if(post.catagory==="Computer"){  %>
+        <img class="img-fluid" src="images/computer.png" alt="">
+
+  <%  }else{ %>
+          <img class="img-fluid" src="images/profileicon2.png" alt="">
+     <%  } %>
+
+    </div>
+    <div class="request-info">
+      <div class="request-date">
+        <% var createdTime=new Date(post.time)  %>
+
+        <span><%=createdTime.toString().slice(0,15)%></span>
+      </div>
+      <h5 class="request-name">Name:<%= post.fullname %></h5>
+      <h5 class="request-country">Country: <%= post.country %></h5>
+      <h5 class="request-contact">Contact: iamwaseemsh@gmail.com</h5>
+      <h5 class="request-intrest">Intrests:<%= post.catagory%> , <%= post.subcatagory%> </h5>
+      <h5 class="request-level">Level: <%=typeof post.level!='undefined'?post.level:""%></h5>
+      <p><b>Description:</b> <%= post.description %></p>
+    </div>
+    <div class="request-more">
+    <a href="/<%=post._id%>"> <img src="images/moreicon.png" alt=""></a>
+    </div>
+  </div>
+<% }); %>

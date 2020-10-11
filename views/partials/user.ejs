@@ -1,0 +1,14 @@
+<% foundUsers.forEach(function(item){ %>
+  <li>
+
+
+
+<div class="items1234 items123 chatUser" username="<%=item.username %>" fullname="<%=item.fullname%>" roomid="<%=item.roomid %>" currentUser="<%=currentUser %>" currentUserName="<%=currentUserName %>">
+  <p><%=item.fullname%></p>
+
+  <input type="hidden" name="" id="uservalue" value="<%=item %>">
+</div>
+    </li>
+
+
+<% })%>

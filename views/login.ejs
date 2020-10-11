@@ -1,0 +1,28 @@
+<%-include('partials/header0.ejs') %>
+
+
+
+<div class="login">
+<div class="login-image">
+  <img src="images/login.png" alt="">
+  <h3 class="font-weight-bold">Login here</h3>
+</div>
+<div class="login-form">
+  <form class="form-group" action="/login" method="post">
+      <%- include("partials/messages") -%>
+    <label>Email</label>
+    <input class="form-control" type="text" name="username" value="iamwaseemsh@gmail.com">
+    <label for="">Password</label> <a href="#">Forgot password?</a>
+    <input class="form-control" type="password" name="password" value="1234567">
+    <div class="login-btn">
+      <button type="submit" class="btn btn-dark login-btn" name="button">Login</button>
+    </div>
+
+
+  </form>
+
+</div>
+<div class="login-bottom">
+  <p>New here?</p><a href="/register">Create an account</a>
+</div>
+</div>

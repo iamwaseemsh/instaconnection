@@ -1,0 +1,18 @@
+<%- include("partials/header1.ejs") -%>
+<div class="editprofileMain fluid-container">
+  <div class="fluid-container editprofileCore">
+    <div class="editprofileImage">
+      <img class="img-fluid roundClass" src="<%=typeof profileDetails!='undefined'?profileDetails.imgurl:"images/profile.png"%>" alt="">
+    </div>
+    <%=typeof msg!='undefined' ? msg: '' %>
+    <form  action="/editprofile" method="post" enctype="multipart/form-data">
+      <label for="">Choose image</label>
+      <input type="file" class="form-control" name="myImage" value="">
+      <label for="">Edit intrests fields</label>
+      <input type="text" class="form-control" name="intrests" value="<%=typeof profileDetails!='undefined'?profileDetails.intrests:""%>">
+      <label for="">Edit bio</label>
+      <textarea name="bio" class="form-control" rows="8" cols="80" ><%=typeof profileDetails!='undefined'?profileDetails.bio:""%></textarea>
+      <button type="submit" class="btn btn-dark form-control" name="button">Submit</button>
+    </form>
+  </div>
+</div>

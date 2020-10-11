@@ -1,0 +1,11 @@
+<%comments.forEach(function(comment){ %>
+  <div class="row commentMain">
+    <div class="col-lg-2">
+      <img class="commentImage" src="images/profile.png" alt="">
+    </div>
+    <div class="col-lg-8">
+      <h5><%=comment.fullname%></h5>
+      <p><%=comment.comment%></p>
+    </div>
+  </div>
+<%}) %>

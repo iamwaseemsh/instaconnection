@@ -1,0 +1,43 @@
+<%- include('partials/header1.ejs') -%>
+
+
+<div class="row container-fluid">
+<div class="col-lg-2 col-sm-12 col-md-3 container-fluid profile-div">
+  <div class="profileDiv container">
+    <img class="img-fluid roundImg" src="<%=typeof profileDetails !='undefined'?profileDetails.imgurl:'images/profile.png' %>" alt="">
+  </div>
+  <hr>
+    <div class="detailDiv container-fluid">
+      <h4 style="font-size:1.2rem;">Welcome, <%=currentUser.fullname%>!</h4>
+
+      <h5>Country: <%=currentUser.country%></h5>
+      <h5 style="font-size:1.2rem;">Intrests:<%=typeof profileDetails!='undefined'?profileDetails.intrests:''%></h5>
+      <hr>
+      <h5>Bio<p><%=typeof profileDetails!='undefined'?profileDetails.bio:""%>.</p></h5>
+    </div>
+    <a href="/editprofile">Edit profile</a>
+</div>
+<div class="col-lg-8 col-sm-12 col-md-7 container-fluid  main-div">
+
+
+  <div   class="request-new ">
+    <h6  style="float:left ;margin-right:20px;" >Create new request  </h6>
+  <button type="button" class="btn btn-success" onclick="window.location.href='/new-request'" name="button">+</button>
+
+  </div>
+<h1 style="float:left;">New requests</h1>
+
+  <%-include("partials/request.ejs") -%>
+</div>
+
+<div class="col-lg-2 col-sm-12 col-md-2 container-fluid cat-div">
+  <dl>
+    <dt>Computer</dt>
+    <dd>AI</dd>
+    <dd>Machine learning</dd>
+    <dd>Coding</dd>
+    <dd>Designing</dd>
+
+  </dl>
+</div>
+</div>

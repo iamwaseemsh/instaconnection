@@ -1,0 +1,59 @@
+<%- include("partials/header1.ejs") -%>
+
+<div class="request">
+  <div class="request-img">
+  <%  if(data.catagory==="Computer"){  %>
+      <img class="img-fluid" src="images/computer.png" alt="">
+
+<%  }else{ %>
+        <img class="img-fluid" src="images/profileicon2.png" alt="">
+   <%  } %>
+
+  </div>
+  <div class="request-info">
+    <div class="request-date">
+      <% var createdTime=new Date(data.time)  %>
+
+      <span><%=createdTime.toString().slice(0,15)%></span>
+    </div>
+    <h5 class="request-name">Name:<%= data.fullname %></h5>
+    <h5 class="request-country">Country: <%= data.country %></h5>
+    <h5 class="request-contact">Contact: iamwaseemsh@gmail.com</h5>
+    <h5 class="request-intrest">Intrests:<%= data.catagory%> , <%= data.subcatagory%> </h5>
+    <h5 class="request-level">Level: Intermediate</h5>
+    <p><b>Description:</b> <%= data.description %></p>
+  </div>
+
+
+</div>
+<div class="createComment container-fluid">
+<div class="commentIcon float-left">
+
+</div>
+<h4>Comments</h4>
+<div class="inputcomment">
+  <form  action="post/comment" method="post">
+    <div class="input-group">
+
+      <span class="input-group-img">
+             <img style="width:80%;" src="images/comment.png" alt="">
+      </span>
+   <input placeholder="Enter text here" type="text" name="comment" class="form-control">
+   <input type="hidden" name="fullname" value=<%=currentUserFullname%>>
+   <input type="hidden" name="username" value=<%=currentUserUsername%>>
+   <input type="hidden" name="userId" value=<%=currentUserId%>>
+   <input type="hidden" name="requestId" value=<%=data._id%>>
+   <span class="input-group-btn">
+        <button class="btn btn-secondary" type="submit">Post</button>
+   </span>
+</div>
+
+  </form>
+</div>
+
+</div>
+<br>
+<br>
+<%- include("partials/comment.ejs") -%>
+
+<%- include("partials/footer.ejs") -%>
